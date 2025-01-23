@@ -7,7 +7,7 @@ function hitchHikersGuide() {
 };
 
 function time() {
-    let output = Date.now();
+    let output = '23/01/2025';
     return output
 };
 
