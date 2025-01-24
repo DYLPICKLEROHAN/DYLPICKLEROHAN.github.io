@@ -110,9 +110,18 @@ body main{
     text-align:center;  
 }
 
-.block1-column1 p{
+.subheading{
+    color: rgb(1,61,123);
+    font-size:18px;
+}
+
+ul li{
+    margin-left:30px;
+    padding-inline-start: 15px;
+}
+.block1-column1 div{
     color:black;
-} 
+}
 
 .button-42, .button-about{
     height:20px;
@@ -125,17 +134,23 @@ body main{
     padding:2px 4px;
     max-width:50%;
 }
+.button-42:hover, .button-about:hover{
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.5);
+    cursor:pointer;
+}
+
 .degree{
     color:rgba(1,61,123, 1);
     font-size: 20px;
 }
 .period{
-    font-size: 10px;
+    font-size: 12px;
     color: rgba(1,61,123, 0.7);
     font-style: italic;
+    margin-left:20px;
 }
 .institute{
-    color:rgba(1, 61,123, .5);
+    color:grey;
     font-size: 12px;
     padding-left:30px;
 }
@@ -156,7 +171,7 @@ footer{
     align-items: center;
 }
 
-.exp-column{ margin-bottom:10px;
+.exp-column{margin-bottom:10px;
 
 }
 
@@ -183,3 +198,9 @@ footer{
     background-color: rgba(0, 0, 0, 0.5);
     transition: 0.15s;
 }
+
+.workplace{
+    color:grey;
+    font-size:16;
+}
+
