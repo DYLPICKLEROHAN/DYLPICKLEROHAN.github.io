@@ -1,6 +1,5 @@
-*{ 
-    margin: 0px;
-    padding:0px;
+*{ margin: 0;
+    padding:0;
     font-family: Roboto,'Poppins', sans-serif;
 }
 
@@ -60,6 +59,7 @@ body{
     height:1000px;
 }
 
+
 body main{
     padding:20px;
     background-image: url(images/bckgrnd.png); 
@@ -68,13 +68,13 @@ body main{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 800px;
-    display:flex;
-    
+    display:flex;    
 }
 
 .opening-block{
-    height:80%;
     margin-top:60px;
+    height:calc(100vh - 60px);
+    width:fit;
     display:flex;
     align-items: center;
     justify-content:center;
@@ -85,8 +85,23 @@ body main{
     background-position-x: 15%;
     background-color: rgba(237, 192, 125, 0.105);
     box-shadow: inset 0px 20px 80px rgba(0, 0, 0, 0.5);
-
+    
+    animation-name:bounce;
+    animation-duration: 1s;
+    animation-timing-function:ease-in;
+    animation-delay:1s;
+    animation-iteration-count:1;
+    animation-direction:normal;
+    animation-fill-mode: none;
 }
+
+@keyframes bounce{
+    20%, 50%, 80%, to{transform:translateY(0px)}
+    40%{transform: translateY(-50px)}
+   70%{transform:translateY(-25px);}
+   90%{transform:translateY(-5px)}
+}
+
 
 .opening-block p{
     font-size: 28px;
